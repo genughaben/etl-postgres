@@ -10,25 +10,26 @@ To enable Sparkify to search songs users listen to a star database schema was us
 songplays functions as the facts table. 
 
 
-<p>
-    <img src="images/songplays.JPG" width="220" height="240" />
-</p>
-
 Songlays table
+<br>
 ![alt text](images/songplays.JPG "Songlays table")
 
 songs, artists, users and time are separate dimension tables whose data is connected to the facts data by means of foreign key relations using song_id, artist_id, users_id and start_time.
 
 Songs table
+<br>
 ![alt text](images/songs.png "Songs Table")
 
 Artists table
+<br>
 ![alt text](images/artists.png "Artists Table")
 
 Users table
+<br>
 ![alt text](images/users.png  "Users Table" )
 
 Time table
+<br>
 ![alt text](images/time.png "Time Table")
 
 
@@ -50,6 +51,7 @@ Each files contains all songplay logs having been logged on one day. So each con
 Each file contains data for the songplays, users and time table.
 
 Log_data file - An example log in one of the files in JSON.
+<br>
 ![alt text](images/log_data_file_json_example.png "Log_data file json")
 
 ## ETL Process:
@@ -66,7 +68,7 @@ Both parts use PostgreSQL queries that are pre-defined in sql-queries.py.
 
 creates_table.py.
 
-Executing creates_table.py drops tables if they exists and (re-)creates the tables specified in [Link-Text.](#schema)
+Executing creates_table.py drops tables if they exists and (re-)creates the tables specified in [Schema](#schema)
 
 
 

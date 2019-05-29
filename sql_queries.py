@@ -11,7 +11,7 @@ time_table_drop = "DROP TABLE IF EXISTS time"
 songplay_table_create = ("""CREATE TABLE IF NOT EXISTS songplays (
                                 songplay_id SERIAL PRIMARY KEY,
                                 start_time VARCHAR NOT NULL,
-                                user_id INTEGER,
+                                user_id INTEGER NOT NULL,
                                 song_id VARCHAR,
                                 artist_id VARCHAR,
                                 session_id INTEGER,
