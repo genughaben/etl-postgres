@@ -12,25 +12,25 @@ songplays functions as the facts table.
 
 Songlays table
 <br>
-![alt text](images/songplays.png "Songlays table")
+![alt text](images/songplays.png =100x20 "Songlays table")
 
 songs, artists, users and time are separate dimension tables whose data is connected to the facts data by means of foreign key relations using song_id, artist_id, users_id and start_time.
 
 Songs table
 <br>
-![alt text](images/songs.png "Songs Table")
+![Image](images/songs.png "Songs Table")
 
 Artists table
 <br>
-![alt text](images/artists.png "Artists Table")
+![Image](images/artists.png "Artists Table")
 
 Users table
 <br>
-![alt text](images/users.png  "Users Table" )
+![Image](images/users.png  "Users Table" )
 
 Time table
 <br>
-![alt text](images/time.png "Time Table")
+![Image](images/time.png "Time Table")
 
 
 # ETL PIPELINE
@@ -44,7 +44,7 @@ Each file contains data about one song and its artist in JSON format.
 
 Song_data file - example.
 <br>
-![alt text](images/song_data_file.png "Song_data file json")
+![Image](images/song_data_json.png "Song_data file json")
 
 From log_data files that are ordered in folders by year and month contain the data to fill the users, time and songplays table.
 Each files contains all songplay logs having been logged on one day. So each contains enties for each songplay in JSON.
@@ -52,7 +52,7 @@ Each file contains data for the songplays, users and time table.
 
 Log_data file - An example log in one of the files in JSON.
 <br>
-![alt text](images/log_data_file_json_example.png "Log_data file json")
+![alt text](images/log_data_json.png "Log_data file json")
 
 ## ETL Process:
 
