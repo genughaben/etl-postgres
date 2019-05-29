@@ -12,7 +12,7 @@ songplays functions as the facts table.
 
 Songlays table
 <br>
-![alt text](images/songplays.JPG "Songlays table")
+![alt text](images/songplays.png "Songlays table")
 
 songs, artists, users and time are separate dimension tables whose data is connected to the facts data by means of foreign key relations using song_id, artist_id, users_id and start_time.
 
